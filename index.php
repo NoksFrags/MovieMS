@@ -7,7 +7,9 @@ require_once "config.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Register - PMS</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +21,7 @@ require_once "config.php";
     
     <h2 class="mb-4">Register</h2>
 
-    <form action="index.php" method="POST">
+    <form action="add.php" method="POST">
         <input
             type="text"
             name="name"
@@ -78,6 +80,7 @@ require_once "config.php";
         <button
             class="w-100 btn btn-lg btn-primary"
             type="submit"
+            name="submit"
         >
             Sign Up
         </button>

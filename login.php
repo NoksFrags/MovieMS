@@ -1,3 +1,4 @@
+
 <?php
 require_once "config.php";
 ?>
@@ -6,9 +7,14 @@ require_once "config.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - PMS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login - MMS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,9 +23,10 @@ require_once "config.php";
 
     <div class="logo">B</div>
 
-    <h2 class="mb-4">Please sign in</h2>
+    <h2 class="h3 mb-4">Please sign in</h2>
 
-    <form action="login.php" method="POST">
+    <form action="loginLogic.php" method="POST">
+
         <input
             type="text"
             name="username"
@@ -46,7 +53,7 @@ require_once "config.php";
         <button
             class="w-100 btn btn-lg btn-primary"
             type="submit"
-        >
+            name="submit">
             Sign in
         </button>
 
